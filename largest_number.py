@@ -19,7 +19,7 @@ def finding_largest_number(random_numbers):
             largest_number = random_numbers[loop_counter]
 
     return largest_number
- 
+
 
 def main():
     # this function calls other functions
@@ -35,11 +35,15 @@ def main():
         a_random_number = random.randint(1, 100)  # a number between 1 and 100
         random_numbers.append(a_random_number)
         loop_counter1 = loop_counter + 1
-        print("The random number {0} is: {1}".format(loop_counter1, random_numbers[loop_counter]))
+        print(
+            "The random number {0} is: {1}".format(
+                loop_counter1, random_numbers[loop_counter]
+            )
+        )
 
     biggest_number = finding_largest_number(random_numbers)
 
-    print("")    
+    print("")
     print("\nThe largest number is {0}.".format(biggest_number))
     print("\nDone.")
 
